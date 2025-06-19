@@ -24,6 +24,11 @@
 <img src="https://img.shields.io/badge/-bat-4e4e4e?logo=windows-terminal" alt="bat">
 <img src="https://img.shields.io/badge/-Kotlin-9966cc?logo=kotlin" alt="Kotlin">
 
+## 📱 Test the App
+
+Want to try the app?  
+👉 [**Click here to download the APK**](https://ufile.io/42u9rgxn) 👈
+
 </div>
 
 

@@ -44,7 +44,7 @@ Want to try the app?
   - [Installation](#installation)
   - [Usage](#usage)
   - [Testing](#testing)
-  - [Contributing](#)
+  - [Contributing](#contributing)
 
 ---
 

@@ -4,8 +4,6 @@
 
 *Experience Weather Clarity, Instantly and Beautifully*  
 
-<br>
-
 <!-- Badge Row -->
 [![last commit](https://img.shields.io/github/last-commit/ManojGowda15/Weather-App)](https://github.com/ManojGowda15/Weather-App)
 ![today](https://img.shields.io/badge/today-brightgreen)
@@ -16,8 +14,6 @@
 <br>
 
 *Built with the tools and technologies:*  
-
-<br>
 
 <!-- Tools Row -->
 <img src="https://img.shields.io/badge/-JetBrains-black?logo=jetbrains" alt="JetBrains">

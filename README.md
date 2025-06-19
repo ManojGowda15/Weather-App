@@ -118,6 +118,17 @@ Weather-app uses the **JUnit** test framework. Run the test suite with:
 
 Using [gradle](https://gradle.org/):
 
+<br>
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+For more contribution or collaboration, feel free to **contact me**.
+
+📧 Email: [manojv13579@gmail.com]  
+💬 LinkedIn : [https://www.linkedin.com/in/manojv03/]
+
 ```bash
 gradle test
 ```

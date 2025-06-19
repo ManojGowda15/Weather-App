@@ -133,6 +133,7 @@ For more contribution or collaboration, feel free to **contact me**.
 📧 Email: [manojv13579@gmail.com]  
 💬 LinkedIn : [https://www.linkedin.com/in/manojv03/]
 
+<br>
 
 ⬆️ [Return](#weather-app)
 

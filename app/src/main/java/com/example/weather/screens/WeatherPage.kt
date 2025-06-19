@@ -18,7 +18,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.runtime.livedata.observeAsState
-import coil3.compose.AsyncImage
+import coil.compose.AsyncImage
+//import coil3.compose.AsyncImage
 import com.example.weather.api.NetworkResponse
 import com.example.weather.api.WeatherModel
 import com.example.weather.viewModel.WeatherViewModel
@@ -57,7 +58,7 @@ fun WeatherPage(viewModel: WeatherViewModel) {
                     onValueChange = { city = it },
                     label = { Text("Search location") },
                     singleLine = true,
-                    shape = RoundedCornerShape(12.dp)
+                    shape = RoundedCornerShape(18.dp)
                 )
                 IconButton(
                     onClick = {
@@ -144,22 +145,27 @@ fun WeatherDetails(data: WeatherModel) {
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(vertical = 16.dp),
-            shape = RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp),
+            shape = RoundedCornerShape(topStart = 24.dp, topEnd = 24.dp, bottomEnd = 24.dp, bottomStart = 24.dp),
             colors = CardDefaults.cardColors(containerColor = Color.White),
             elevation = CardDefaults.cardElevation(8.dp)
         ) {
             Column(
-                modifier = Modifier.padding(16.dp),
+                modifier = Modifier.padding(10.dp),
                 verticalArrangement = Arrangement.spacedBy(12.dp)
             ) {
+
+                Spacer(modifier = Modifier.height(2.dp))
+
                 Text(
                     text = "Weather Today",
-                    fontSize = 20.sp,
-                    fontWeight = FontWeight.SemiBold,
+                    fontSize = 25.sp,
+                    fontWeight = FontWeight.Bold,
                     color = Color.Black,
                     textAlign = TextAlign.Center,
                     modifier = Modifier.fillMaxWidth()
                 )
+                Spacer(modifier = Modifier.height(5.dp))
+
                 WeatherRow("UV", data.current.uv, "Precipitation", "${data.current.precip_mm} mm")
                 WeatherRow("Humidity", "${data.current.humidity}%", "Wind Speed", "${data.current.wind_kph} km/h")
                 WeatherRow("Local Time", data.location.localtime.split(" ")[1], "Local Date", data.location.localtime.split(" ")[0])

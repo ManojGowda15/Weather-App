@@ -29,7 +29,7 @@
 ## 📱 Test the App
 
 Want to try the app?  
-👉 [**Click here to download the APK**](https://ufile.io/42u9rgxn) 👈
+👉 [**Click here to download the APK**](https://ufile.io/pf1kvtlm) 👈
 
 </div>
 

@@ -326,7 +326,7 @@ fun ForecastList(forecastDays: List<com.example.weather.api.ForecastDay>, lastUp
 
         LazyRow(
             modifier = Modifier.fillMaxWidth(),
-            horizontalArrangement = Arrangement.spacedBy(12.dp)
+            horizontalArrangement = Arrangement.spacedBy(12.dp, Alignment.CenterHorizontally)
         ) {
             itemsIndexed(forecastDays) { index, day ->
                 ForecastCard(day, index)
@@ -337,7 +337,7 @@ fun ForecastList(forecastDays: List<com.example.weather.api.ForecastDay>, lastUp
             text = "Disclaimer: Weather data may differ from other providers (e.g., Google Weather) due to different sources and update times.",
             fontSize = 12.sp,
             color = Color.Gray,
-            modifier = Modifier.padding(top = 12.dp)
+            modifier = Modifier.padding(top = 12.dp, bottom = 20.dp)
         )
     }
 }
@@ -372,11 +372,13 @@ fun ForecastCard(day: com.example.weather.api.ForecastDay, index: Int) {
         elevation = CardDefaults.cardElevation(6.dp),
         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
         modifier = Modifier
-            .width(220.dp)
+            .width(250.dp)
             .padding(vertical = 4.dp)
     ) {
         Column(
-            modifier = Modifier.padding(12.dp),
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(12.dp),
             verticalArrangement = Arrangement.spacedBy(6.dp),
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
